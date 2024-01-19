@@ -7,7 +7,7 @@ function App() {
       <div className="">
         <Navbar />
       </div>
-      <div className="col-span-4 pt-[7%]">
+      <div className="col-span-4 pt-[5%]">
         <Home />
       </div>
     </div>
