@@ -1,48 +1,14 @@
 import React from "react";
-import Slider from "react-slick";
-import free from "../assets/images/free.jpg";
-import site from "../assets/images/site.jpg";
-import blog from "../assets/images/blog.jpg";
+import { Navigation, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import stokveel from "../assets/images/stokveel.png";
 import star from "../assets/images/star-1.png";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-const data = [
-  {
-    name: "free",
-    image: free,
-    link: "https://www.google.com",
-  },
-
-  {
-    name: "site",
-    image: site,
-    link: "https://www.google.com",
-  },
-
-  {
-    name: "blog",
-    image: blog,
-    link: "https://www.google.com",
-  },
-
-  {
-    name: "stokveel",
-    image: stokveel,
-    link: "https://www.google.com",
-  },
-];
 
 export default function Home() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <div className="space-y-10 h-[100%] pb-10">
       <div className="flex items-center justify-center gap-20">
@@ -52,24 +18,83 @@ export default function Home() {
         </h1>
         <img src={star} alt="" className="h-7" />
       </div>
-      <div className="relative border border-gray-600 w-[90%] h-[83%] m-auto rounded-md p-4">
-        <div className="h-full w-[45%] bg-[#1D1D1D] p-2 rounded-md">
-          <h1>I'm a final year IT student at Unisa</h1>
+      <div className="grid grid-cols-4 gap-10 border border-gray-600 w-[94%] h-[83%] m-auto rounded-md p-6">
+        <div className="relative col-span-2 bg-[#161616] p-2 rounded-md row-span-4 pt-4 home">
+          <p className="p-2">
+            Hi, I'm a final year IT student at unisa with a strong interest in
+            software and web development.
+          </p>
+          <p className="p-2">
+            I am currently seeking an internship, entry-level, or part-time
+            opportunity where I can demonstrate my programming skills and gain
+            hands-on experience.
+          </p>
+          <p className="p-2">
+            Highlight of my work can be{" "}
+            <span className="text-blue-500 font-bold">
+              <a href="https://www.google.com">found here</a>
+            </span>
+          </p>
+          <div className="absolute right-12 bottom-16 px-7 py-3 bg-[#343333] transition ease-in-out duration-300 rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black ">
+            <h1>Contact</h1>
+          </div>
         </div>
-        <div className="absolute right-14 w-96 h-56 border border-gray-900 bottom-5 mt-10 rounded-md">
-          <Slider {...settings}>
-            {data.map((item) => (
-              <div className="h-56 rounded-md">
-                <div
-                  className="h-3/4 rounded-t-md bg-cover bg-no-repeat"
-                  style={{ backgroundImage: `url(${item.image})` }}
-                ></div>
-                <div className="flex items-center justify-center h-1/4 rounded-b-md">
-                  <a href={item.link}>{item.name}</a>
-                </div>
-              </div>
-            ))}
-          </Slider>
+        <div className="col-span-2 rounded-full bg-[#161616] flex items-center p-5 justify-center home">
+          <p className="text-2xl">SOFTWARE DEVELOPER</p>
+        </div>
+        <div className="border border-gray-900 rounded-md row-span-3 col-span-2">
+          <div className="h-full">
+            <Swiper
+              modules={[Navigation, A11y]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              scrollbar={{ draggable: true }}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              className="h-full"
+            >
+              <SwiperSlide className="relative w-full h-full rounded-md">
+                <img
+                  src={stokveel}
+                  alt=""
+                  className="w-full h-full object-fill rounded-md"
+                />
+                <a
+                  href="https://www.google.com"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-black p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md home"
+                >
+                  Stokvel
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="w-full rounded-md">
+                <img
+                  src={stokveel}
+                  alt=""
+                  className="w-full h-full object-fill rounded-md"
+                />
+                <a
+                  href="https://www.google.com"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-black p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md home"
+                >
+                  Stokvel
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="w-full rounded-md">
+                <img
+                  src={stokveel}
+                  alt=""
+                  className="w-full h-full object-fill rounded-md"
+                />
+                <a
+                  href="https://www.google.com"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-black p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md home"
+                >
+                  Stokvel
+                </a>
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

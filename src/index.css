@@ -57,3 +57,13 @@ body {
     --rotate: 360deg;
   }
 }
+
+.home {
+  background: rgb(32, 30, 30);
+  background: linear-gradient(
+    90deg,
+    rgb(39, 38, 38) 0%,
+    rgb(29, 28, 28) 50%,
+    rgb(15, 15, 15) 100%
+  );
+}
