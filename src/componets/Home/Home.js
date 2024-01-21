@@ -1,5 +1,4 @@
 import React from "react";
-import { Navigation, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,7 +9,7 @@ import star from "../assets/images/star-1.png";
 
 export default function Home() {
   return (
-    <div className="space-y-10 h-[100%] pb-10">
+    <div className="space-y-10 h-[100%] pb-10 w-full">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-7" />
         <h1 className="text-5xl text-center text-orange-700">
@@ -45,14 +44,12 @@ export default function Home() {
         <div className="border border-gray-900 rounded-md row-span-3 col-span-2">
           <div className="h-full">
             <Swiper
-              modules={[Navigation, A11y]}
               spaceBetween={50}
               slidesPerView={1}
-              navigation
               scrollbar={{ draggable: true }}
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
-              className="h-full"
+              className="h-full cursor-pointer"
             >
               <SwiperSlide className="relative w-full h-full rounded-md">
                 <img
