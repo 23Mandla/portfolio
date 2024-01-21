@@ -9,7 +9,7 @@ export default function Layout() {
         <Navbar />
       </div>
 
-      <div className="col-span-4 pt-[5%]">
+      <div className="col-span-4">
         <Outlet />
       </div>
     </div>

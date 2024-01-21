@@ -9,7 +9,7 @@ import star from "../assets/images/star-1.png";
 
 export default function Home() {
   return (
-    <div className="space-y-10 h-[100%] pb-10 w-full">
+    <div className="space-y-10 h-[100%] w-full">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-7" />
         <h1 className="text-5xl text-center text-orange-700">

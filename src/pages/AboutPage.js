@@ -1,9 +1,8 @@
-import React from 'react'
-import About from '../componets/About/About'
+import About from "../componets/About/About"
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="pt-[4%] h-full pb-[4%]">
       <About />
     </div>
   )
