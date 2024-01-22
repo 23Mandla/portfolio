@@ -6,10 +6,10 @@ export default function Skills() {
   const database = ["Mongodb", "myphpadmin"];
 
   return (
-    <div className="grid grid-cols-3 bg-[#858585]  text-[#313030] p-8 pt-14">
+    <div className="grid grid-cols-3 bg-[#858585]  text-[#313030] p-8 pt-24">
       <div className="relative">
         <h1 className="font-bold w-full text-center text-4xl p-5 pl-10">MY SKILLS</h1>
-        <div className="absolute w-[27rem] ml-3 left-[10%] h-[65%] top-[25%] bg-[#e6e5e5] p-10">
+        <div className="absolute w-[27rem] ml-3 left-[10%] h-[70%] top-[23%] bg-[#e6e5e5] p-5">
           <div className="grid grid-cols-2">
             <ul className="space-y-5 mt-5">
               <h1 className="text-xl">languages</h1>
@@ -24,7 +24,7 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-          <div className="pt-10">
+          <div className="pt-5">
             <ul className="space-y-5">
               <h1 className="text-xl">Database</h1>
               {database.map((database) => (
