@@ -6,7 +6,7 @@ export default function Skills() {
   const database = ["Mongodb", "myphpadmin"];
 
   return (
-    <div className="grid grid-cols-3 bg-[#858585] h-screen text-[#313030] p-8 pt-14">
+    <div className="grid grid-cols-3 bg-[#858585]  text-[#313030] p-8 pt-14">
       <div className="relative">
         <h1 className="font-bold w-full text-center text-4xl p-5 pl-10">MY SKILLS</h1>
         <div className="absolute w-[27rem] ml-3 left-[10%] h-[65%] top-[25%] bg-[#e6e5e5] p-10">
