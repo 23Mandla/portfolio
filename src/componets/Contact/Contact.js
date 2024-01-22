@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-3 w-full h-full pt-[4%]">
       <div className="relative  bg-[#BFA48D]">
-        <div className="absolute left-10 top-[25%] bg-[#eeddd2] w-[25em] h-[40%] text-black">
+        <div className="absolute left-10 top-[28%] bg-[#eeddd2] w-[25em] h-[40%] text-black">
           <h1 className="w-full text-center p-5 text-3xl">Contact me</h1>
         </div>
       </div>

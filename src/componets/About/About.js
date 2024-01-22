@@ -3,16 +3,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="bg-[#9f9999] h-screen m-auto grid grid-cols-3 text-[#313030] p-8">
+    <div className="relative m-auto grid grid-cols-3 text-[#313030] p-8 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-[11%] after:left-[10%]">
       <div className="relative">
-        <div className="absolute top-[25%] left-[12%] w-[27rem] h-1/2 ">
+        <div className="absolute top-[25%] left-[12%] w-[27rem] h-[45%] ">
           <div className="absolute top-0 left-0 w-full h-full holder"></div>
           <img src={me} alt="" className="w-full h-full object-cover" />
         </div>
         <h1 className="font-bold w-full text-center text-4xl p-5">ABOUT ME</h1>
       </div>
-      <div className="bg-[#dfdfdf] col-span-2 p-2">
-        <div className="w-[80%] h-full float-right pl-20 p-10 space-y-8 bg-[#c7c3c0] mr-3 text-[#4A4A4A]">
+      <div className="bg-[#dfdfdf] col-span-2 p-16">
+        <div className="w-[80%] h-full float-right p-12 space-y-8 bg-[#c7c3c0] mr-3 text-[#4A4A4A] text-sm">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile
