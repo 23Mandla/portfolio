@@ -15,10 +15,7 @@
 }
 
 body {
-  
-  background-image: url("componets/assets/images/bg-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; /** TODO responsive background edit*/
+  background-color: black;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #f5f5f5;
