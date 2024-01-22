@@ -9,7 +9,7 @@ import star from "../assets/images/star-1.png";
 
 export default function Home() {
   return (
-    <div className="space-y-10 h-[100%] w-full">
+    <div className="space-y-10 h-full w-full">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-7" />
         <h1 className="text-5xl text-center text-orange-700">
@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
         <img src={star} alt="" className="h-7" />
       </div>
-      <div className="grid grid-cols-4 gap-10 border border-gray-600 w-[94%] h-[83%] m-auto rounded-md p-6">
+      <div className="grid grid-cols-4 gap-5 border border-gray-600 w-[94%] h-[83%] m-auto rounded-md p-6">
         <div className="relative col-span-2 bg-[#161616] p-2 rounded-md row-span-4 pt-4 home">
           <p className="p-2">
             Hi, I'm a final year IT student at unisa with a strong interest in
