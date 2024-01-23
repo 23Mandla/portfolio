@@ -9,7 +9,7 @@ export default function Skills() {
     <div className="grid grid-cols-3 text-[#313030] p-8 pt-24 ">
       <div className="relative">
         <h1 className="font-bold w-full text-center text-4xl p-5 pl-10">MY SKILLS</h1>
-        <div className="absolute w-[27rem] ml-3 left-[10%] h-[55%] top-[23%] bg-[#e6e5e5] p-5 text-sm">
+        <div className="absolute w-[29rem] ml-3 left-[10%] h-[65%] top-[23%] bg-[#e6e5e5] p-5 text-sm">
           <div className="grid grid-cols-2">
             <ul className="space-y-5 mt-5">
               <h1 className="text-lg">languages</h1>

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="relative m-auto grid grid-cols-3 text-[#313030] p-8 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-[11%] after:left-[10%]">
       <div className="relative">
-        <div className="absolute top-[25%] left-[12%] w-[27rem] h-[45%] ">
+        <div className="absolute top-[25%] left-[12%] w-[29rem] h-[45%] ">
           <div className="absolute top-0 left-0 w-full h-full holder"></div>
           <img src={me} alt="" className="w-full h-full object-cover" />
         </div>
