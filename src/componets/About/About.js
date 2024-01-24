@@ -12,7 +12,7 @@ export default function About() {
         <h1 className="font-bold w-full text-center text-4xl p-5">ABOUT ME</h1>
       </div>
       <div className="bg-[#dfdfdf] col-span-2 p-16">
-        <div className="w-[80%] h-full float-right p-12 space-y-8 bg-[#c7c3c0] mr-3 text-[#4A4A4A] text-sm">
+        <div className="w-[80%] h-full float-right pr-5 p-12 space-y-8 bg-[#c7c3c0]  text-[#4A4A4A] text-sm">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile

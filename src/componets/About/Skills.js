@@ -36,7 +36,7 @@ export default function Skills() {
       </div>
 
       <div className="col-span-2 p-16 bg-[#a7a7a7]">
-        <div className="w-[80%] mr-3 float-right h-full bg-[#f5f2ef] p-12 space-y-10 text-sm">
+        <div className="w-[80%] pr-5 float-right h-full bg-[#f5f2ef] p-12 space-y-10 text-sm">
           <p>
             I possess strong proficiency in HTML, CSS (including SCSS and
             Tailwind CSS), and JavaScript, enabling me to create creative and
@@ -53,7 +53,7 @@ export default function Skills() {
           </p>
           <p>
             Upon completion of the design and programming phase, I am proficient
-            in integrating your application with the database, Mongodb or myphpadmin.
+            in integrating your application with the database, MongoDB or myphpadmin.
           </p>
         </div>
       </div>

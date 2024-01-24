@@ -1,9 +1,27 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 export default function Contact() {
   return (
     <div className="grid grid-cols-3 w-full h-full pt-[4%]">
       <div className="relative  bg-[#BFA48D]">
-        <div className="absolute left-10 top-[28%] bg-[#eeddd2] w-[25em] h-[40%] text-black">
+        <div className="absolute left-7 top-[28%] bg-[#eeddd2] w-[25em] h-[40%] text-black">
           <h1 className="w-full text-center p-5 text-3xl">Contact me</h1>
+          <div className="w-1/2 relative left-10 pt-5">
+            <p className="text-sm">
+              For any inquiries please complete the form or send me an email :
+            </p>
+            <a href="mailto:mandlambolekwa@gmail.com">
+              mandlambolekwa@gmail.com
+            </a>
+          </div>
+        </div>
+        <div className="absolute bottom-10 w-1/2 pl-1 flex gap-10 justify-center pt-10">
+          <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
+            <FaGithub className="text-xl text-[#1C2128] cursor-pointer" />
+          </div>
+          <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
+            <FaLinkedin className="text-xl rounded-full text-gray-500" />
+          </div>
         </div>
       </div>
       <div className="col-span-2 bg-[#8b5f40]">
@@ -38,7 +56,7 @@ export default function Contact() {
                 <button className="px-12 py-2 bg-[#868484] rounded-md text-black">
                   Send
                 </button>
-                </div>
+              </div>
             </div>
           </form>
         </div>
