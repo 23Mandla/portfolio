@@ -3,7 +3,7 @@ import Contact from '../componets/Contact/Contact'
 
 export default function ContactPage() {
   return (
-    <div className='p-2 h-screen'>
+    <div className=' h-screen'>
       <Contact />
     </div>
   )

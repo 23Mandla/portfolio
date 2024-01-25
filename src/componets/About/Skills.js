@@ -7,11 +7,9 @@ export default function Skills() {
 
   return (
     <div className="relative  h-screen p-16">
-      <h1 className="relative text-4xl pl-5 top-12 float-left left-10">
-        My skills
-      </h1>
+      <h1 className="relative text-4xl pl-5 top-12 float-left left-10">My skills</h1>
       <div className="bg-[#dfdfdf] relative w-[70%] h-full p-10 float-right ">
-        <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#c7c3c0]  text-[#4A4A4A] text-sm">
+        <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#F3EDE9]  text-[#4A4A4A] text-sm">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile
@@ -30,7 +28,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="absolute w-[55%] ml-3 -left-[45%] h-auto top-[33%] bg-[#dfdfdf] p-5 text-sm">
+        <div className="absolute w-[55%] ml-3 -left-[45%] h-auto bottom-0 bg-[#dfdfdf] p-5 text-sm">
           <div className="grid grid-cols-2">
             <ul className="space-y-5 mt-5">
               <h1 className="text-lg">languages</h1>
