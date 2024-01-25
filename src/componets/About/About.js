@@ -5,7 +5,7 @@ export default function About() {
   
       <div className="relative h-screen p-16 grid grid-cols-3 gap-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-5 after:left-[10%]">
         <div className="grid grid-rows-3">
-          <h1 className="relative text-5xl pl-5 top-12 left-10">About me</h1>
+          <h1 className="relative text-5xl pl-5 top-12 left-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[50%] after:top-14 after:left-[14%]">About me</h1>
           <div className="relative row-span-2 m-2 -top-7">
             <div className="absolute top-0 left-0 w-full h-full holder"></div>
             <img
@@ -16,7 +16,7 @@ export default function About() {
           </div>
         </div>
         <div className="bg-[#dfdfdf] p-10 col-span-2">
-          <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#c7c3c0]  text-[#4A4A4A] text-sm">
+          <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#F3EDE9]  text-[#4A4A4A] text-sm">
             <p>
               I'm Mandla Mbolekwa, final year student at Unisa and a software
               developer with a passion for creating and developing web and

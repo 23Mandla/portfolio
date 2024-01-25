@@ -1,4 +1,5 @@
 import stokvel from "../../componets/assets/images/stokveel.png";
+import art from "../../componets/assets/images/art.png";
 import { FaGithub } from "react-icons/fa";
 
 export default function Work() {
@@ -18,7 +19,7 @@ export default function Work() {
             </div>
           </div>
           <div className="w-[70%] h-[60%]">
-            <img src={stokvel} alt="placeholder" className="w-full h-full" />
+            <img src={art} alt="placeholder" className="w-full h-full" />
           </div>
         </div>
       </div>
