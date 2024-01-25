@@ -7,7 +7,9 @@ export default function Skills() {
 
   return (
     <div className="relative  h-screen p-16">
-      <h1 className="relative text-4xl pl-5 top-12 float-left left-10">My skills</h1>
+      <h1 className="relative text-4xl pl-5 top-12 float-left left-10">
+        My skills
+      </h1>
       <div className="bg-[#dfdfdf] relative w-[70%] h-full p-10 float-right ">
         <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#c7c3c0]  text-[#4A4A4A] text-sm">
           <p>
@@ -43,11 +45,11 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-          <div className="pt-5">
-            <ul className="space-y-5">
-              <h1 className="text-lg">Database</h1>
+          <div className="pt-3">
+            <h1 className="text-lg">Database</h1>
+            <ul className="space-y-4 flex flex-row gap-4 items-center">
               {database.map((database) => (
-                <li key={database}>{database}</li>
+                <li className="flex items-center" key={database}>{database}</li>
               ))}
             </ul>
           </div>
