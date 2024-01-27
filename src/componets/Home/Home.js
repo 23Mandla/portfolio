@@ -32,10 +32,10 @@ export default function Home() {
             This is a highlight of my skill showcasing my ability to create
             awesome creative website.
           </p>
-          <div className="absolute left-[24%] bottom-[33%] px-10 py-5  bg-[#bcb9b9] transition ease-in-out duration-300 rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black ">
-            <h1 className="text-2xl">GET IN TOUCH</h1>
+          <div className="w-[60%] left-[24%] m-auto mt-4 py-3  bg-[#bcb9b9] transition ease-in-out duration-300 rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black ">
+            <h1 className="text-xl text-center">GET IN TOUCH</h1>
           </div>
-          <div className="absolute bottom-2 w-1/2 pl-1 flex gap-10  pt-5 pb-10">
+          <div className="absolute bottom-0 w-1/2 pl-1 flex gap-10 pb-4">
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
             </div>
