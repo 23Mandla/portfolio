@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-3 w-full h-full">
       <div className="relative  bg-[#d9bfa9]">
-        <div className="absolute left-7 top-[28%] bg-[#eeddd2] w-[25em] h-[40%] text-black">
+        <div className="absolute left-7 top-[28%] bg-[#dec8b9] w-[25em] h-[40%] text-black">
           <h1 className="w-full text-center p-5 text-3xl">Contact me</h1>
           <div className="w-1/2 relative left-10 pt-5">
             <p className="text-sm">
@@ -14,12 +14,12 @@ export default function Contact() {
               mandlambolekwa@gmail.com
             </a>
           </div>
-          <div className="absolute bottom-2 w-1/2 pl-1 flex gap-10 justify-center pt-10">
+          <div className="absolute bottom-2 w-1/2 pl-1 flex gap-10 justify-center pt-5 pb-10">
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#1C2128] cursor-pointer" />
             </div>
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
-              <FaLinkedin className="text-xl rounded-full text-gray-500" />
+              <FaLinkedin className="text-xl rounded-full text-gray-300" />
             </div>
           </div>
         </div>

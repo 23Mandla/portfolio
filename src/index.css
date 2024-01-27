@@ -67,3 +67,15 @@ body {
     rgb(15, 15, 15) 100%
   );
 }
+
+@keyframes slide {
+  0% { transform: translate(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+  animation-delay: 1s;
+}
+
+
