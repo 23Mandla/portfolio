@@ -43,9 +43,9 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-          <div className="pt-3">
+          <div className="pt-3 space-y-2">
             <h1 className="text-lg">Database</h1>
-            <ul className="space-y-4 flex flex-row gap-4 items-center">
+            <ul className="space-y-4 gap-4 items-center">
               {database.map((database) => (
                 <li className="flex items-center" key={database}>{database}</li>
               ))}

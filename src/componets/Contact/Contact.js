@@ -14,7 +14,7 @@ export default function Contact() {
               mandlambolekwa@gmail.com
             </a>
           </div>
-          <div className="absolute bottom-10 w-1/2 pl-1 flex gap-10 justify-center pt-10">
+          <div className="absolute bottom-2 w-1/2 pl-1 flex gap-10 justify-center pt-10">
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#1C2128] cursor-pointer" />
             </div>
