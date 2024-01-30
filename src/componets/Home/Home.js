@@ -1,5 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from 'swiper/modules';
 import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "swiper/css";
@@ -66,9 +67,14 @@ export default function Home() {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               scrollbar={{ draggable: true }}
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
+              modules={[Autoplay]}
               className="h-full cursor-pointer"
             >
               <SwiperSlide className="relative w-full h-full rounded-md">

@@ -1,10 +1,3 @@
-#  This is a redesign of profile
+#  Profile redesign
 
-I will using using react for -
-front end-end,
-
-
-node js and espress for backend
-
-
-mongoDB for my database
+![profile](profile.png)
