@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <motion.div
     variants={{
-      hidden: { opacity: 0, y: -100 },
+      hidden: { opacity: 0, y: -50 },
       visible: { opacity: 1, y: 0 },
     }}
     initial="hidden"
