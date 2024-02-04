@@ -11,6 +11,7 @@ import "swiper/css/scrollbar";
 import star from "../assets/images/star-1.png";
 import art from "../../componets/assets/images/art.png";
 import todo from "../../componets/assets/images/todo.png";
+import stokveel from "../../componets/assets/images/stokveel.png";
 
 export default function Home() {
   const ref = useRef(null);
@@ -128,7 +129,7 @@ export default function Home() {
                   href="https://www.google.com"
                   className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
-                  Stokvel
+                  TODO APP
                 </a>
               </SwiperSlide>
               <SwiperSlide className="w-full rounded-md">
@@ -141,12 +142,12 @@ export default function Home() {
                   href="https://www.google.com"
                   className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
-                  Stokvel
+                  ART MAKER
                 </a>
               </SwiperSlide>
               <SwiperSlide className="w-full rounded-md">
                 <img
-                  src={art}
+                  src={stokveel}
                   alt=""
                   className="w-full h-full object-fill rounded-md"
                 />
@@ -154,7 +155,7 @@ export default function Home() {
                   href="https://www.google.com"
                   className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
-                  Stokvel
+                  STOKVEL
                 </a>
               </SwiperSlide>
             </Swiper>
