@@ -79,7 +79,7 @@ export default function Home() {
               <FaAnglesLeft className="text-3xl text-orange-400" />
             </span>
             <div className="inline-block w-full overflow-hidden whitespace-nowrap">
-              <span className="inline-block animate-slide space-x-16">
+              <span className="inline-block animate-slide space-x-16 py-2">
                 <p className="text-2xl inline-block">SOFTWARE DEVELOPER</p>
                 <p className="text-2xl inline-block">WEB DEVELOPER</p>
                 <p className="text-2xl inline-block">PROGRAMMER</p>
