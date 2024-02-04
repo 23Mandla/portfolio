@@ -1,4 +1,4 @@
-import React,{useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
@@ -31,7 +31,10 @@ export default function Home() {
         <img src={star} alt="" className="h-10" />
       </div>
       <div className="grid grid-cols-4 gap-8 w-[94%] h-[83%] m-auto rounded-md p-6 bg-[#b1b6bc]">
-        <div ref={ref} className="relative col-span-2 bg-[#e4e2e2] p-9 text-sm rounded-md row-span-4 text-gray-600">
+        <div
+          ref={ref}
+          className="relative col-span-2 bg-[#e4e2e2] p-9 text-sm rounded-md row-span-4 text-gray-600"
+        >
           <motion.p
             variants={{
               hidden: { opacity: 0, y: 75 },
@@ -39,7 +42,7 @@ export default function Home() {
             }}
             initial="hidden"
             animate={animation}
-            transition={{ duration: 1.2, delay: 0.7}}
+            transition={{ duration: 1.2, delay: 0.7 }}
             className="p-2"
           >
             Hello, I'm a final year IT student at UNISA with a keen passion for
@@ -47,23 +50,6 @@ export default function Home() {
             academic journey, I am actively seeking opportunities for
             internships, entry-level positions, or part-time roles where I can
             apply and enhance my programming skills.
-          </motion.p>
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 1.2, delay: 0.9}}
-            className="p-2"
-          >
-            My proficiency lies in crafting innovative and visually appealing
-            websites, showcasing my ability to blend creativity with technical
-            expertise. I am eager to contribute my skills and gain valuable
-            hands-on experience in a dynamic environment. Let's connect and
-            explore the possibilities of creating something extraordinary
-            together.
           </motion.p>
 
           <motion.div
@@ -73,7 +59,7 @@ export default function Home() {
             }}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 1.2, delay: 1}}
+            transition={{ duration: 1.2, delay: 1 }}
             className="w-[60%] m-auto mt-10 py-3  bg-[#bcb9b9] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
           >
             <h1 className="text-xl text-center">GET IN TOUCH</h1>
