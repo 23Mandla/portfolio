@@ -26,7 +26,7 @@ export default function Home() {
     <div className="space-y-10 h-full w-full flex flex-col justify-center">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-10" />
-        <h1 className="text-5xl text-center text-gray-400">Mandla Mbolekwa</h1>
+        <h1 className="text-5xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
       <div className="grid grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#d0d0d2]">
