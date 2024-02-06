@@ -3,7 +3,7 @@ import me from "../assets/images/home-pic-3.jpg";
 export default function About() {
   return (
   
-      <div className="relative h-screen p-16 grid grid-cols-3 gap-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-20 after:left-[10%]">
+      <div className="relative h-screen p-16 grid grid-cols-3 gap-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-8 after:left-[10%]">
         <div className="grid grid-rows-3">
           <h1 className="relative text-5xl pl-5 top-12 left-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[50%] after:top-14 after:left-[14%]">About me</h1>
           <div className="relative row-span-2 m-2 -top-7">

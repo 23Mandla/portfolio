@@ -29,7 +29,7 @@ export default function Home() {
         <h1 className="text-5xl text-center text-gray-400">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
-      <div className="grid grid-cols-4 gap-8 w-[94%] m-auto rounded-md p-6 bg-[#d0d0d2]">
+      <div className="grid grid-cols-4 h-[80%] gap-8 w-[94%] m-auto rounded-md p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
           className="grid gap-8 col-span-2 bg-[#dfdede] p-9 text-[15px] rounded-md row-span-4 text-gray-600"
