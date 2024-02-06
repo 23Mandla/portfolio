@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "swiper/css";
@@ -30,10 +29,10 @@ export default function Home() {
         <h1 className="text-5xl text-center text-gray-400">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
-      <div className="grid grid-cols-4 gap-8 w-[94%] h-[83%] m-auto rounded-md p-6 bg-[#b1b6bc]">
+      <div className="grid grid-cols-4 gap-8 w-[94%] h-[83%] m-auto rounded-md p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
-          className="relative col-span-2 bg-[#e4e2e2] p-9 text-sm rounded-md row-span-4 text-gray-600"
+          className="relative col-span-2 bg-[#dfdede] p-9 text-sm rounded-md row-span-4 text-gray-600"
         >
           <motion.p
             variants={{
@@ -60,9 +59,9 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.2, delay: 1 }}
-            className="w-[60%] m-auto mt-10 py-3  bg-[#bcb9b9] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
+            className="w-[60%] m-auto mt-10 py-3  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
           >
-            <h1 className="text-xl text-center">GET IN TOUCH</h1>
+            <h1 className="text-xl text-center text-white">GET IN TOUCH</h1>
           </motion.div>
           <div className="absolute bottom-0 w-1/2 pl-1 flex gap-10 pb-8">
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
@@ -73,20 +72,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-2 gap-10 rounded-full bg-[#5c5b5b] flex items-center justify-center overflow-hidden whitespace-nowrap">
-          <div className="relative flex items-center justify-around flex-row w-full">
-            <span className="px-4">
-              <FaAnglesLeft className="text-3xl text-orange-400" />
-            </span>
-            <div className="inline-block w-full overflow-hidden whitespace-nowrap">
-              <span className="inline-block animate-slide space-x-16 py-2">
-                <p className="text-2xl inline-block">SOFTWARE DEVELOPER</p>
-                <p className="text-2xl inline-block">WEB DEVELOPER</p>
-                <p className="text-2xl inline-block">PROGRAMMER</p>
-              </span>
-            </div>
-            <span className="px-4">
-              <FaAnglesRight className="text-3xl text-orange-400" />
+        <div className="col-span-2 gap-10 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
+          <div className="inline-block w-full overflow-hidden whitespace-nowrap">
+            <span className="inline-block animate-slide space-x-16 py-2">
+              <p className="text-2xl inline-block">SOFTWARE DEVELOPER</p>
+              <p className="text-2xl inline-block">WEB DEVELOPER</p>
+              <p className="text-2xl inline-block">PROGRAMMER</p>
             </span>
           </div>
         </div>
@@ -113,7 +104,7 @@ export default function Home() {
                 />
                 <a
                   href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
                   TODO APP
                 </a>
@@ -126,7 +117,7 @@ export default function Home() {
                 />
                 <a
                   href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
                   ART MAKER
                 </a>
@@ -139,7 +130,7 @@ export default function Home() {
                 />
                 <a
                   href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#bcb9b9] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
+                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
                 >
                   STOKVEL
                 </a>
