@@ -29,10 +29,10 @@ export default function Home() {
         <h1 className="text-5xl text-center text-gray-400">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
-      <div className="grid grid-cols-4 gap-8 h-[83%] m-auto rounded-md p-6 bg-[#d0d0d2]">
+      <div className="grid grid-cols-4 gap-8 w-[94%] m-auto rounded-md p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
-          className="grid grid-rows-3 col-span-2 bg-[#dfdede] p-9 text-[15px] rounded-md row-span-4 text-gray-600"
+          className="grid gap-8 col-span-2 bg-[#dfdede] p-9 text-[15px] rounded-md row-span-4 text-gray-600"
         >
           <motion.p
             variants={{
@@ -63,11 +63,11 @@ export default function Home() {
           >
             <h1 className="text-xl text-center text-white">GET IN TOUCH</h1>
           </motion.div>
-          <div className="pl-1 flex items-center gap-10">
-            <div className="bg-[#858585] h-14 w-14 flex items-center justify-center rounded-full hover:scale-110 transition-all">
+          <div className="pl-1 flex mt-5 gap-10">
+            <div className="bg-[#858585] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
             </div>
-            <div className="bg-[#858585] h-14 w-14 p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
+            <div className="bg-[#858585] h-10 w-10 p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
               <FaLinkedin className="text-xl rounded-full text-gray-300" />
             </div>
           </div>
