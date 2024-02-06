@@ -32,7 +32,7 @@ export default function Home() {
       <div className="grid grid-cols-4 gap-8 w-[94%] h-[83%] m-auto rounded-md p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
-          className="relative col-span-2 bg-[#dfdede] p-9 text-sm rounded-md row-span-4 text-gray-600"
+          className="grid grid-rows-3 col-span-2 bg-[#dfdede] p-9 text-[15px] rounded-md row-span-4 text-gray-600"
         >
           <motion.p
             variants={{
@@ -59,15 +59,15 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.2, delay: 1 }}
-            className="w-[60%] m-auto mt-10 py-3  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
+            className="w-[60%] m-auto py-3  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
           >
             <h1 className="text-xl text-center text-white">GET IN TOUCH</h1>
           </motion.div>
-          <div className="absolute bottom-0 w-1/2 pl-1 flex gap-10 pb-8">
-            <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
+          <div className="pl-1 flex items-center gap-10">
+            <div className="bg-[#858585] h-14 w-14 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
             </div>
-            <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
+            <div className="bg-[#858585] h-14 w-14 p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
               <FaLinkedin className="text-xl rounded-full text-gray-300" />
             </div>
           </div>

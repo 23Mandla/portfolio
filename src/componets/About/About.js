@@ -7,16 +7,16 @@ export default function About() {
         <div className="grid grid-rows-3">
           <h1 className="relative text-5xl pl-5 top-12 left-5 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[50%] after:top-14 after:left-[14%]">About me</h1>
           <div className="relative row-span-2 m-2 -top-7">
-            <div className="absolute top-0 left-0 w-full h-full holder"></div>
+            <div className="absolute top-0 left-0 w-full h-full holder rounded-lg"></div>
             <img
               src={me}
               alt="placeholder"
-              className="w-full h-full object-cover top-0"
+              className="w-full h-full object-cover top-0 rounded-lg"
             />
           </div>
         </div>
-        <div className="bg-[#dfdfdf] p-10 col-span-2">
-          <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#F3EDE9]  text-[#4A4A4A] text-sm">
+        <div className="bg-[#dedbdb] p-10 col-span-2">
+          <div className="m-auto w-[83%] h-full p-12 space-y-8 bg-[#bfbebc]  text-[#ffffff] text-[15px]">
             <p>
               I'm Mandla Mbolekwa, final year student at Unisa and a software
               developer with a passion for creating and developing web and
