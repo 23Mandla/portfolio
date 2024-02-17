@@ -1,19 +1,21 @@
 import React from "react";
 import html from "../../componets/assets/images/html.png";
-import css from "../../componets/assets/images/css.png";
+import node from "../../componets/assets/images/node.png";
 import js from "../../componets/assets/images/js.png";
 import php from "../../componets/assets/images/php.png";
+import java from "../../componets/assets/images/java.png";
 import react from "../../componets/assets/images/react.png";
 import next from "../../componets/assets/images/next.png";
-import nodeExp from "../../componets/assets/images/nodeExp.png";
+import express from "../../componets/assets/images/express.png";
 import mySQL from "../../componets/assets/images/mySQL.png";
+import firebase from "../../componets/assets/images/firebase.png";
 import mongodb from "../../componets/assets/images/mongodb.png";
 
 export default function Skills() {
   return (
     <div className="relative  h-screen p-16">
       <div className="bg-[#d4d1d1] relative w-[70%] h-full p-10 float-right ">
-        <div className=" h-full p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[15px]">
+        <div className=" h-full p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[14.5px]">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile
@@ -37,23 +39,45 @@ export default function Skills() {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
         >
           <div className="flex flex-col justify-center gap-3">
-            <img src={php} alt="" className="w-12 rounded-md" />
-            <img src={react} alt="" className="w-12 rounded-lg" />
+            <div className="bg-[#7A86B8] rounded-md">
+              <img src={php} alt="" className="w-12 rounded-m" />
+            </div>
+            <div className="bg-[#d4d6d9] rounded-md">
+              <img src={java} alt="" className="w-12 rounded-lg" />
+            </div>
           </div>
           <div className="flex flex-col justify-center gap-3">
-            <img src={php} alt="" className="w-12 rounded-md" />
-            <img src={mongodb} alt="" className="w-12 h-10 rounded-lg" />
-            <img src={mySQL} alt="" className="w-12 rounded-md" />
+            <div className="bg-white rounded-md">
+              <img src={firebase} alt="" className="w-12 rounded-md" />
+            </div>
+            <div className="bg-[#001D2A] rounded-md">
+              <img src={mongodb} alt="" className="w-12 h-10 rounded-lg" />
+            </div>
+            <div className="bg-[#3E6E93] rounded-md">
+              <img src={mySQL} alt="" className="w-12 rounded-md" />
+            </div>
           </div>
           <div className="flex flex-col justify-center gap-3">
-            <img src={nodeExp} alt="" className="w-14 h-12 rounded-md" />
-            <img src={react} alt="" className="w-14 rounded-lg" />
-            <img src={next} alt="" className="w-14 rounded-md" />
+            <div className="bg-black rounded-md p-1">
+              <img src={express} alt="" className="w-14 h-12 rounded-md" />
+            </div>
+            <div className="bg-[#23272F] rounded-md p-1">
+              <img src={react} alt="" className="w-14 rounded-lg" />
+            </div>
+            <div className="bg-gray-500 rounded-md p-1">
+              <img src={next} alt="" className="w-14 rounded-md" />
+            </div>
           </div>
           <div className="space-y-5">
-            <img src={html} alt="" className="w-16 rounded-md" />
-            <img src={css} alt="" className="w-16 rounded-lg" />
-            <img src={js} alt="" className="w-16 rounded-md" />
+            <div className="bg-orange-300 rounded-md p-2">
+              <img src={html} alt="" className="w-16 rounded-md" />
+            </div>
+            <div className="bg-white rounded-md p-2">
+              <img src={node} alt="" className="w-16 rounded-lg" />
+            </div>
+            <div className="bg-gray-500 rounded-md p-1">
+              <img src={js} alt="" className="w-16 rounded-md" />
+            </div>
           </div>
         </div>
       </div>

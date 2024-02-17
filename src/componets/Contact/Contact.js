@@ -5,8 +5,8 @@ export default function Contact() {
     <div className="grid grid-cols-3 w-full h-full">
       <div className="relative  bg-[#d9bfa9]">
         <div className="absolute left-7 top-[28%] bg-[#dec8b9] w-[25em] h-[40%] text-black">
-          <h1 className="w-full text-center p-5 text-3xl">Contact me</h1>
-          <div className="w-1/2 relative left-10 pt-5">
+          <h1 className="w-full text-center p-5 text-2xl">Contact me</h1>
+          <div className="w-1/2 relative left-10">
             <p className="text-sm">
               For any inquiries please complete the form or send me an email :
             </p>
@@ -14,7 +14,7 @@ export default function Contact() {
               mandlambolekwa@gmail.com
             </a>
           </div>
-          <div className="absolute bottom-0 w-1/2 pl-1 flex gap-10 justify-center pt-5 pb-2">
+          <div className="w-1/2 pl-1 flex gap-10 justify-center pt-5 pb-2">
             <div className="bg-[#858585] p-2 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#1C2128] cursor-pointer" />
             </div>
@@ -25,7 +25,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="col-span-2 bg-[#8b5f40] p-16">
-        <div className="relative w-[100%] top-[15%] float-right h-[90%]">
+        <div className="relative w-[95%] top-[5%] float-right h-[90%]">
           <form className="w-[90%] float-right translate-y-[20%]">
             <div className="space-y-8 items-center gap-4">
               <div className="flex flex-1 justify-between w-full gap-3">

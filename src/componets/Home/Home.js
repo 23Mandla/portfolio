@@ -26,13 +26,13 @@ export default function Home() {
     <div className="space-y-10 h-full w-full flex flex-col justify-center">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-10" />
-        <h1 className="text-5xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
+        <h1 className="text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
       <div className="grid grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
-          className="grid gap-8 col-span-2 bg-[#dfdede] p-9 text-[15px] row-span-4 text-gray-600"
+          className="grid gap-8 col-span-2 bg-[#dfdede] p-9 text-sm row-span-4 text-gray-600"
         >
           <motion.p
             variants={{
@@ -59,9 +59,9 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.2, delay: 1 }}
-            className="w-[60%] m-auto py-3  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
+            className="w-[50%] m-auto py-2  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
           >
-            <h1 className="text-xl text-center text-white">GET IN TOUCH</h1>
+            <h1 className="text-lg text-center text-white">GET IN TOUCH</h1>
           </motion.div>
           <div className="pl-1 flex mt-5 gap-10">
             <div className="bg-[#858585] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
@@ -75,9 +75,9 @@ export default function Home() {
         <div className="col-span-2 gap-10 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
           <div className="inline-block w-full overflow-hidden whitespace-nowrap">
             <span className="inline-block animate-slide space-x-16 py-2">
-              <p className="text-2xl inline-block">SOFTWARE DEVELOPER</p>
-              <p className="text-2xl inline-block">WEB DEVELOPER</p>
-              <p className="text-2xl inline-block">PROGRAMMER</p>
+              <p className="text-xl inline-block">SOFTWARE DEVELOPER</p>
+              <p className="text-xl inline-block">WEB DEVELOPER</p>
+              <p className="text-xl inline-block">PROGRAMMER</p>
             </span>
           </div>
         </div>
