@@ -23,7 +23,7 @@ export default function Home() {
   }, [isInview, animation]);
 
   return (
-    <div className="space-y-10 h-full w-full flex flex-col justify-center">
+    <div className="space-y-12 h-full w-full flex flex-col justify-center">
       <div className="flex items-center justify-center gap-20">
         <img src={star} alt="" className="h-10" />
         <h1 className="text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
