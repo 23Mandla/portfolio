@@ -29,10 +29,10 @@ export default function Home() {
         <h1 className="text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
-      <div className="grid grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#d0d0d2]">
+      <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#d0d0d2]">
         <div
           ref={ref}
-          className="grid gap-8 col-span-2 bg-[#dfdede] p-9 text-sm row-span-4 text-gray-600"
+          className="grid gap-8 col-span-2 bg-[#dfdede] p-4 lg:p-8 text-[14px] lg:text-sm row-span-4 text-gray-600 order-last md:order-first"
         >
           <motion.p
             variants={{
@@ -42,7 +42,6 @@ export default function Home() {
             initial="hidden"
             animate={animation}
             transition={{ duration: 1.2, delay: 0.7 }}
-            className="p-2"
           >
             Hello, I'm a final year IT student at UNISA with a keen passion for
             software and web development. As I approach the culmination of my
@@ -72,16 +71,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-2 gap-10 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
+        <div className="col-span-2 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
           <div className="inline-block w-full overflow-hidden whitespace-nowrap">
-            <span className="inline-block animate-slide space-x-16 py-2">
+            <span className="inline-block animate-slide space-x-14 py-0 lg:py-2">
               <p className="text-xl inline-block">SOFTWARE DEVELOPER</p>
               <p className="text-xl inline-block">WEB DEVELOPER</p>
               <p className="text-xl inline-block">PROGRAMMER</p>
             </span>
           </div>
         </div>
-        <div className="border border-gray-900 rounded-md row-span-3 col-span-2">
+        <div className="border border-gray-900 rounded-md row-span-3 col-span-2 hidden md:block">
           <div className="h-full">
             <Swiper
               spaceBetween={50}

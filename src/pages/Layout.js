@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 export default function Layout() {
   return (
     <div className="h-screen ">
-      <div className="w-full">
+      <div>
         <Navbar />
       </div>
 
-      <div className="col-span-4 w-4/5 float-right">
+      <div className="col-span-4 md:w-4/5 float-right">
         <Outlet />
       </div>
     </div>
