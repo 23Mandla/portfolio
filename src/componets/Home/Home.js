@@ -29,10 +29,10 @@ export default function Home() {
         <h1 className="text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
         <img src={star} alt="" className="h-10" />
       </div>
-      <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#d0d0d2]">
+      <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#ddddde]">
         <div
           ref={ref}
-          className="grid gap-8 col-span-2 bg-[#dfdede] p-4 lg:p-8 text-[14px] lg:text-sm row-span-4 text-gray-600 order-last md:order-first"
+          className="grid gap-8 col-span-2 bg-[#eae7e7] p-4 lg:p-8 text-[14px] lg:text-sm row-span-4 text-gray-600 order-last md:order-first"
         >
           <motion.p
             variants={{

@@ -1,12 +1,12 @@
-
+import React from "react"
 
 export default function ToggleNav() {
   return (
-    <div className="w-20 h-20 rounded-full bg-white">
-      <div>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div className="absolute z-10 w-full h-full  block md:hidden">
+      <div className="relative flex flex-col  items-center gap-1 bg-[#e9e2db] float-right w-28 h-28 pt-7 pl-2 cursor-pointer" style={{clipPath:"circle(85% at 91% 12%)"}}>
+        <span className="w-10 h-1 bg-[#A39D89]"></span>
+        <span className="w-10 h-1 bg-[#A39D89]"></span>
+        <span className="w-10 h-1 bg-[#A39D89]"></span>
       </div>
     </div>
   )
