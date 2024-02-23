@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ToggleNav from "./ToggleNav";
-
-export default function Navbar() {
+import MenuItem from "./MenuItem";;
+export default function Navbar({isOpen}) {
+  
   return (
     <>
       <div className="fixed flex-col w-1/5 float-left h-full items-center justify-center hidden md:flex">
@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <ToggleNav />
+     <MenuItem showMenu={isOpen}/>
     </>
   );
 }
