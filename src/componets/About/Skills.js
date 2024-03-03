@@ -13,8 +13,23 @@ import mongodb from "../../componets/assets/images/mongodb.png";
 
 export default function Skills() {
   return (
-    <div className="relative  h-screen p-16">
-      <div className="bg-[#d4d1d1] relative w-[70%] h-full p-10 float-right ">
+    <div className="relative space-y-10 md:space-y-0 h-screen p-16">
+      <div className="w-full grid grid-cols-2 md:hidden gap-5">
+        {/** insert title skills on side here */}
+        <div className="flex flex-col gap-5">
+          <div className="flex justify-end">
+            <img src={php} alt="" className="w-[50%] rounded-md p-2" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)"}}/>
+          </div>
+          <div className="flex justify-end gap-10">
+            <img src={java} alt="" className="w-[25%] rounded-lg p-2" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)"}} />
+            <img src={firebase} alt="" className="w-[25%] rounded-md p-2" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)"}}/>
+          </div>
+        </div>
+        <div className="p-5 rounded-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+         <img src={html} alt="" className="w-full h-full rounded-md"/>
+        </div>
+      </div>
+      <div className="bg-[#d4d1d1] relative w-full h-full p-10 float-right md:w-[70%]">
         <div className=" h-full p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[14.5px]">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
@@ -35,7 +50,7 @@ export default function Skills() {
         </div>
 
         <div
-          className="absolute flex gap-8 border w-[58%] ml-3 -left-[50%] h-38 top-[20%] p-6 text-sm"
+          className="hidden absolute md:flex gap-8 border w-[58%] ml-3 -left-[50%] h-38 top-[20%] p-6 text-sm "
           style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
         >
           <div className="flex flex-col justify-center gap-3">
