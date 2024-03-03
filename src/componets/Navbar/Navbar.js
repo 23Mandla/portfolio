@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MenuItem from "./MenuItem";;
+import MenuItem from "./MenuItem";
 export default function Navbar({isOpen}) {
   
   return (
