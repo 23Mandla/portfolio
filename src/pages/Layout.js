@@ -18,7 +18,7 @@ export default function Layout() {
         <ToggleNav toggle={handleToggle} />
       </div>
 
-      <div className="col-span-4 md:w-4/5 float-right">
+      <div className="col-span-4 md:w-4/5 float-right w-full">
         <Outlet />
       </div>
     </div>

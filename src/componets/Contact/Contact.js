@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="grid grid-cols-3 w-full h-full">
-      <div className="relative  bg-[#d9bfa9]">
-        <div className="absolute left-7 top-[28%] bg-[#dec8b9] w-[25em] h-[40%] text-black">
+    <div className="grid md:grid-cols-3 w-full h-full">
+      <div className="relative hidden md:block bg-[#dbc3af]">
+        <div className="absolute left-7 top-10 md:top-[28%] bg-[#dec8b9] w-[25em] h-[40%] text-black">
           <h1 className="w-full text-center p-5 text-2xl">Contact me</h1>
           <div className="w-1/2 relative left-10">
             <p className="text-sm">
@@ -25,8 +25,8 @@ export default function Contact() {
         </div>
       </div>
       <div className="col-span-2 bg-[#8b5f40] p-16">
-        <div className="relative w-[95%] top-[5%] float-right h-[90%]">
-          <form className="w-[90%] float-right translate-y-[20%]">
+        <div className="relative w-full md:w-[95%]  md:top-[5%] float-right h-[90%]">
+          <form className="absolute bottom-0 w-full md:w-[90%] float-right md:top-[20%]">
             <div className="space-y-8 items-center gap-4">
               <div className="flex flex-1 justify-between w-full gap-3">
                 <div className="w-full">

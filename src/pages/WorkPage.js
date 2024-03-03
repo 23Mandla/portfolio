@@ -12,7 +12,7 @@ export default function WorkPage() {
     initial="hidden"
     animate="visible"
     transition={{ duration: 1.2}}
-     className="bg-[#F3EDE9] pt-[4%] h-screen">
+     className="bg-[#F3EDE9] pt-[15%] md:pt-[4%] h-screen">
       <Work />
     </motion.div>
   )
