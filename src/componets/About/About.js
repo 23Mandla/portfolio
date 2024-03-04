@@ -2,7 +2,6 @@ import me from "../assets/images/home-pic-3.jpg";
 
 export default function About() {
   return (
-  
       <div className="relative w-screen md:w-full space-y-20 md:space-y-0 h-screen p-16 md:grid gap-5 md:grid-cols-3 after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:-bottom-16 after:left-[10%]">
         <div className="block md:grid md:grid-rows-3">
           <h1 className="relative text-center md:text-center  text-4xl pl-5 md:top-12  after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[50%] md:after:w-[80%] after:top-14 after:left-[25%] md:after:left-[12%] ">About me</h1>

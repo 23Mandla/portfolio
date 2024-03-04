@@ -24,15 +24,15 @@ export default function Home() {
 
   return (
     <div className="space-y-12 h-full w-full flex flex-col justify-center">
-      <div className="flex items-center justify-center gap-20">
-        <img src={star} alt="" className="h-10" />
-        <h1 className="text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
-        <img src={star} alt="" className="h-10" />
+      <div className="flex items-center justify-center gap-8 md:gap-20">
+        <img src={star} alt="" className="h-6 sm:h-10" />
+        <h1 className="text-xl mb:text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
+        <img src={star} alt="" className="h-6 sm:h-10" />
       </div>
       <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#ddddde]">
         <div
           ref={ref}
-          className="grid gap-8 col-span-2 bg-[#eae7e7] p-4 lg:p-8 text-[14px] lg:text-sm row-span-4 text-gray-600 order-last md:order-first"
+          className="grid gap-8 col-span-2 bg-[#eae7e7] p-4 lg:p-8 text-[12px] lg:text-[14px] row-span-4 text-gray-600 order-last md:order-first"
         >
           <motion.p
             variants={{
@@ -60,7 +60,7 @@ export default function Home() {
             transition={{ duration: 1.2, delay: 1 }}
             className="w-[50%] m-auto py-2  bg-[#a09f9f] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
           >
-            <h1 className="text-lg text-center text-white">GET IN TOUCH</h1>
+            <h1 className=" mb:text-lg text-center text-white">GET IN TOUCH</h1>
           </motion.div>
           <div className="pl-1 flex mt-5 gap-10">
             <div className="bg-[#858585] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
@@ -74,9 +74,9 @@ export default function Home() {
         <div className="col-span-2 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
           <div className="inline-block w-full overflow-hidden whitespace-nowrap">
             <span className="inline-block animate-slide space-x-14 py-0 lg:py-2">
-              <p className="text-xl inline-block">SOFTWARE DEVELOPER</p>
-              <p className="text-xl inline-block">WEB DEVELOPER</p>
-              <p className="text-xl inline-block">PROGRAMMER</p>
+              <p className="text-lg mb:text-xl inline-block">SOFTWARE DEVELOPER</p>
+              <p className="text-lg mb:text-xl inline-block">WEB DEVELOPER</p>
+              <p className="text-lg mb:text-xl inline-block">PROGRAMMER</p>
             </span>
           </div>
         </div>

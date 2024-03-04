@@ -12,7 +12,7 @@ export default function AboutPage() {
       initial="hidden"
       animate="visible"
       transition={{ duration: 1.2 }}
-      className="auto bg-[#eae7e7] text-black space-y-14"
+      className="h-auto bg-[#eae7e7] text-black space-y-14"
     >
       <About />
       <Skills />

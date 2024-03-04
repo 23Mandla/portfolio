@@ -29,8 +29,8 @@ export default function Skills() {
          <img src={html} alt="" className="w-full h-full rounded-md"/>
         </div>
       </div>
-      <div className="bg-[#d4d1d1] relative w-full h-full p-10 float-right md:w-[70%]">
-        <div className=" h-full p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[14.5px]">
+      <div className="bg-[#d4d1d1] relative w-full p-10 float-right md:w-[70%]">
+        <div className="p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[14.5px]">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile
