@@ -13,8 +13,8 @@ import mongodb from "../../componets/assets/images/mongodb.png";
 
 export default function Skills() {
   return (
-    <div className="relative space-y-10 md:space-y-0 h-screen p-16">
-      <div className="w-full grid grid-cols-2 md:hidden gap-5">
+    <div className="relative  h-[100%] p-5 mb:p-20 grid md:flex items-center gap-20 justify-end">
+      <div className="w-full grid grid-cols-2 p-2 md:hidden gap-5">
         {/** insert title skills on side here */}
         <div className="flex flex-col gap-5">
           <div className="flex justify-end">
@@ -29,8 +29,8 @@ export default function Skills() {
          <img src={html} alt="" className="w-full h-full rounded-md"/>
         </div>
       </div>
-      <div className="bg-[#d4d1d1] relative w-full p-10 float-right md:w-[70%]">
-        <div className="p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[14.5px]">
+      <div className="bg-[#d4d1d1] relative w-full p-5 mb:p-10 float-right md:w-[70%]">
+        <div className="p-14 space-y-8 bg-[#e5e2e0]  text-[#4A4A4A] text-[12px] mb:text-[14.5px]">
           <p>
             I'm Mandla Mbolekwa, final year student at Unisa and a software
             developer with a passion for creating and developing web and mobile
