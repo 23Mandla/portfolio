@@ -23,10 +23,12 @@ export default function Home() {
   }, [isInview, animation]);
 
   return (
-    <div className="space-y-12 h-full w-full flex flex-col justify-center">
+    <div className="space-y-16 h-full w-full flex flex-col justify-center">
       <div className="flex items-center justify-center gap-8 md:gap-20">
         <img src={star} alt="" className="h-6 sm:h-10" />
-        <h1 className="text-xl mb:text-4xl text-center text-[#A39D89]">Mandla Mbolekwa</h1>
+        <h1 className="text-xl mb:text-4xl text-center text-[#A39D89]">
+          Mandla Mbolekwa
+        </h1>
         <img src={star} alt="" className="h-6 sm:h-10" />
       </div>
       <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#ddddde]">
@@ -74,14 +76,17 @@ export default function Home() {
         <div className="col-span-2 rounded-full px-8 bg-[#959292] flex items-center justify-center overflow-hidden whitespace-nowrap">
           <div className="inline-block w-full overflow-hidden whitespace-nowrap">
             <span className="inline-block animate-slide space-x-14 py-0 lg:py-2">
-              <p className="text-lg mb:text-xl inline-block">SOFTWARE DEVELOPER</p>
+              <p className="text-lg mb:text-xl inline-block">
+                SOFTWARE DEVELOPER
+              </p>
               <p className="text-lg mb:text-xl inline-block">WEB DEVELOPER</p>
               <p className="text-lg mb:text-xl inline-block">PROGRAMMER</p>
             </span>
           </div>
         </div>
-        <div className="border border-gray-900 rounded-md row-span-3 col-span-2 hidden md:block">
-          <div className="h-full">
+        <div className="relative border rounded-md row-span-3 col-span-2 hidden md:block">
+          <div className="absolute top-0 left-0 w-full h-full holder rounded-lg z-10"></div>
+          <div className="relative h-full">
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
@@ -101,12 +106,6 @@ export default function Home() {
                   alt=""
                   className="w-full h-full object-fill rounded-md"
                 />
-                <a
-                  href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
-                >
-                  TODO APP
-                </a>
               </SwiperSlide>
               <SwiperSlide className="w-full rounded-md">
                 <img
@@ -114,12 +113,6 @@ export default function Home() {
                   alt=""
                   className="w-full h-full object-fill rounded-md"
                 />
-                <a
-                  href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
-                >
-                  ART MAKER
-                </a>
               </SwiperSlide>
               <SwiperSlide className="w-full rounded-md">
                 <img
@@ -127,12 +120,6 @@ export default function Home() {
                   alt=""
                   className="w-full h-full object-fill rounded-md"
                 />
-                <a
-                  href="https://www.google.com"
-                  className="transition ease-in-out duration-300 absolute bottom-0 text-lg w-full -h-full flex justify-center items-center bg-[#837e7e] p-3 hover:scale-110 hover:font-bold hover:bg-[#212020] rounded-b-md"
-                >
-                  STOKVEL
-                </a>
               </SwiperSlide>
             </Swiper>
           </div>
