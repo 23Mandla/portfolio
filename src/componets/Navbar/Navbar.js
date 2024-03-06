@@ -34,7 +34,7 @@ export default function Navbar({ isOpen }) {
         >
           <Link to="/" className="w-full h-full grid justify-center">
             <p className="relative top-[15%]">Home</p>
-            <LinkBtn />
+            <LinkBtn state={state.home}/>
           </Link>
         </div>
         <div
@@ -46,7 +46,7 @@ export default function Navbar({ isOpen }) {
         >
           <Link to="/about" className="w-full h-full grid justify-center">
             <p className="relative top-[15%]">About</p>
-            <LinkBtn />
+            <LinkBtn state={state.about}/>
           </Link>
         </div>
         <div
@@ -58,7 +58,7 @@ export default function Navbar({ isOpen }) {
         >
           <Link to="/work" className="w-full h-full grid justify-center">
             <p className="relative top-[15%]">Work</p>
-            <LinkBtn />
+            <LinkBtn state={state.work}/>
           </Link>
         </div>
         <div
@@ -70,7 +70,7 @@ export default function Navbar({ isOpen }) {
         >
           <Link to="/contact" className="w-full h-full grid justify-center">
             <p className="relative top-[10%]">Contact</p>
-            <LinkBtn />
+            <LinkBtn state={state.contact}/>
           </Link>
         </div>
       </div>

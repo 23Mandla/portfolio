@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect } from "react";
+import React, { useReducer, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -13,19 +13,25 @@ import todo from "../../componets/assets/images/todo.png";
 import stokveel from "../../componets/assets/images/stokveel.png";
 import linkBtn from "../assets/images/link.png";
 
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "hover":
+      return { ...state, [action.id]: true };
+    case "unhover":
+      return { ...state, [action.id]: false };
+    default:
+      return state;
+  }
+};
+
 export default function Home() {
-  const [hovered, setHovered] = useState(false);
+  const [hovered, dispatch] = useReducer(reducer, {
+    link: false,
+  });
+
   const ref = useRef(null);
   const isInview = useInView(ref, { triggerOnce: true });
   const animation = useAnimation();
-
-  const mouseEnter = () => {
-    setHovered(true);
-  };
-
-  const mouseLeave = () => {
-    setHovered(false);
-  };
 
   useEffect(() => {
     if (isInview) {
@@ -71,15 +77,15 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.2, delay: 1 }}
-            className="w-[50%] m-auto py-2  bg-[#4e4c48] rounded-lg cursor-pointer hover:bg-slate-300 hover:text-black"
+            className="w-[50%] m-auto py-2  bg-[#4e4c48] rounded-lg cursor-pointer hover:bg-[#525251]"
           >
             <h1 className=" mb:text-lg text-center text-white">GET IN TOUCH</h1>
           </motion.div>
           <div className="pl-1 flex mt-5 gap-10">
-            <div className="bg-[#4e4c48] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
+            <div className="bg-[#a9a59e] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
             </div>
-            <div className="bg-[#4e4c48] h-10 w-10 p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
+            <div className="bg-[#a9a59e] h-10 w-10 p-2 flex items-center justify-center rounded-full cursor-pointer  hover:scale-110 transition-all">
               <FaLinkedin className="text-xl rounded-full text-gray-300" />
             </div>
           </div>
@@ -97,21 +103,25 @@ export default function Home() {
         </div>
         <div className="relative border rounded-md row-span-3 col-span-2 hidden md:block">
           <div
-            className={`absolute text-gray-400 cursor-pointer justify-center top-0 left-0 w-full h-full rounded-lg z-10  ${hovered ? 'linkHover' : ''}`}
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
+            className={`absolute text-gray-400 cursor-pointer justify-center top-0 left-0 w-full h-full rounded-lg z-40  ${
+              hovered.link ? "linkHover" : ""
+            }`}
             style={{ backgroundColor: "rgba(0,0,0,0.7)" }}
+            onMouseEnter={() => dispatch({ type: "hover", id: "link" })}
+            onMouseLeave={() => dispatch({ type: "unhover", id: "link" })}
           >
             <div className="flex gap-10 justify-end pr-20">
               <img src={linkBtn} alt="" className="h-20 w-8" />
-              <h1 className="mt-4 text-3xl font-bold ">
-                Work Summary
-              </h1>
+              <h1 className="mt-4 text-3xl font-bold ">Work Summary</h1>
             </div>
             <p className="w-1/2 text-sm ml-5 mt-6">
               Some of the work I've done while learning and developing my skills
             </p>
-            <div className="ml-56 mt-8 flex items-center border border-gray-500 w-8 h-8 rounded-full hover:border-white hover:scale-110 transition-all duration-300 ease-in-out">
+            <div
+              className={`ml-56 mt-8 flex items-center border border-gray-500 w-8 h-8 rounded-full ${
+                hovered.link ? "link" : ""
+              }`}
+            >
               <img
                 src={linkBtn}
                 alt=""
