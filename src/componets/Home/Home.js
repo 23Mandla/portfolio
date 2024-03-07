@@ -51,7 +51,7 @@ export default function Home() {
       <div className="grid md:grid-cols-4 gap-8 w-[94%] m-auto p-6 bg-[#ddddde]">
         <div
           ref={ref}
-          className="grid gap-8 col-span-2 bg-[#eae7e7] p-4 lg:p-8 text-[12px] lg:text-[14px] row-span-4 text-gray-600 order-last md:order-first"
+          className="hidden md:grid gap-8 col-span-2 bg-[#eae7e7] p-4 lg:p-8 text-[12px] lg:text-[14px] row-span-4 text-gray-600 order-last md:order-first"
         >
           <motion.p
             variants={{
@@ -77,9 +77,9 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.2, delay: 1 }}
-            className="w-[50%] m-auto py-2  bg-[#4e4c48] rounded-lg cursor-pointer hover:bg-[#525251]"
+            className="w-[50%] m-auto py-2  bg-[#4e4c48] rounded-lg cursor-pointer hover:bg-[#525251] text-gray-300 hover:text-white"
           >
-            <h1 className=" mb:text-lg text-center text-white">GET IN TOUCH</h1>
+            <h1 className=" mb:text-lg text-center">GET IN TOUCH</h1>
           </motion.div>
           <div className="pl-1 flex mt-5 gap-10">
             <div className="bg-[#a9a59e] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
@@ -91,17 +91,17 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-2 rounded-full px-8 bg-[#4e4c48] flex items-center justify-center overflow-hidden whitespace-nowrap">
-          <div className="inline-block w-full overflow-hidden whitespace-nowrap">
+          <div className="inline-block w-full overflow-hidden ">
             <span className="inline-block animate-slide space-x-14 py-0 lg:py-2">
-              <p className="text-lg mb:text-xl inline-block">
+              <p className="text-lg mb:text-xl inline-block text-[#58cbfc]">
                 SOFTWARE DEVELOPER
               </p>
-              <p className="text-lg mb:text-xl inline-block">WEB DEVELOPER</p>
-              <p className="text-lg mb:text-xl inline-block">PROGRAMMER</p>
+              <p className="text-lg mb:text-xl inline-block text-orange-300">WEB DEVELOPER</p>
+              <p className="text-lg mb:text-xl inline-block text-purple-400">PROGRAMMER</p>
             </span>
           </div>
         </div>
-        <div className="relative border rounded-md row-span-3 col-span-2 hidden md:block">
+        <div className="relative border rounded-md md:row-span-3 md:col-span-2 ">
           <div
             className={`absolute text-gray-400 cursor-pointer justify-center top-0 left-0 w-full h-full rounded-lg z-40  ${
               hovered.link ? "linkHover" : ""
