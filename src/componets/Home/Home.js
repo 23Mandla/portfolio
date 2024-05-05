@@ -56,7 +56,7 @@ export default function Home() {
           className="hidden md:grid gap-8 col-span-2  p-4 lg:p-8 text-[12px] lg:text-[14px] row-span-4 text-gray-600 order-last md:order-first"
         >
          
-          <div className="flex mt-44 gap-10">
+          <div className="flex mt-48 gap-10">
             <div className="bg-[#a9a59e] h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all">
               <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
             </div>
