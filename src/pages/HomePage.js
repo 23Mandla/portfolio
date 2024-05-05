@@ -12,7 +12,7 @@ export default function HomePage() {
     initial="hidden"
     animate="visible"
     transition={{ duration: 1.2}}
-     className="h-screen bg-[#eae7e7]">
+     className="h-screen bg-[#eae7e7]" >
       <Home />
     </motion.div>
   );
