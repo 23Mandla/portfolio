@@ -55,10 +55,10 @@ export default function Home() {
           className="hidden md:grid text-[12px] lg:text-[14px] text-gray-600 order-last md:order-first"
         >
           <div className="relative flex items-end pl-10">
-            <div className="flex border-4 rounded-full border-[#d3ad80] items-start justify-center">
+            <div className="flex border-4 rounded-full border-[#795C34] items-start justify-center">
               <img src={mandla} alt="" className="w-20 h-20 rounded-full"/>
             </div>
-            <div className="absolute bg-[#d3ad80] h-0.5 w-full bottom-10 left-[9em]">
+            <div className="absolute bg-[#795C34] h-0.5 w-full bottom-10 left-[9em]">
     
             </div>
           </div>
