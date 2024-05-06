@@ -11,7 +11,7 @@ import art from "../../componets/assets/images/art.png";
 import todo from "../../componets/assets/images/todo.png";
 import stokveel from "../../componets/assets/images/stokveel.png";
 import linkBtn from "../assets/images/link.png";
-import homeBg from "../assets/images/home-bg2.png";
+import homeBg from "../assets/images/home-bg.png";
 import mandla from "../assets/images/cartoon.png";
 
 const reducer = (state, action) => {
@@ -55,7 +55,7 @@ export default function Home() {
           className="hidden md:grid text-[12px] lg:text-[14px] text-gray-600 order-last md:order-first"
         >
           <div className="relative flex items-end pl-10">
-            <div className="flex border-4 rounded-full border-white items-start justify-center">
+            <div className="flex border-4 rounded-full border-[#d3ad80] items-start justify-center">
               <img src={mandla} alt="" className="w-20 h-20 rounded-full"/>
             </div>
             <div className="absolute bg-[#d3ad80] h-0.5 w-full bottom-10 left-[9em]">
@@ -65,7 +65,7 @@ export default function Home() {
 
           <div className="relative flex flex-col pt-8 items-center">
             <div
-              className={`relative -left-10 -top-5 flex items-center w-10 h-10 rounded-full ${
+              className={`relative -top-5 flex items-center w-10 h-10 rounded-full ${
                 hovered.link ? "link" : ""
               }`}
             >
@@ -79,7 +79,7 @@ export default function Home() {
                 style={{ transform: "rotate(270deg)" }}
               />
             </div>
-            <div className="-ml-40 -mt-2 flex gap-10 ">
+            <div className="-ml-20 -mt-2 flex gap-10 ">
               <div className="bg-[#a9a59e] h-8 w-8 flex items-center justify-center rounded-full hover:scale-110 transition-all">
                 <FaGithub className="text-xl text-[#242a31] cursor-pointer" />
               </div>
