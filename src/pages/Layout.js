@@ -12,13 +12,13 @@ export default function Layout() {
   }
 
   return (
-    <div className="relative h-screen ">
-      <div>
+    <div className="relative grid grid-cols-7 w-full">
+      <div className="bg-[#ccb28c] flex items-center justify-center">
         <Navbar isOpen={isOpen}/>
         <ToggleNav toggle={handleToggle} />
       </div>
 
-      <div className="col-span-4 md:w-4/5 float-right w-full">
+      <div className="col-span-6">
         <Outlet />
       </div>
     </div>

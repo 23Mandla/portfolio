@@ -24,53 +24,56 @@ export default function Navbar({ isOpen }) {
 
   return (
     <>
-      <div className="fixed flex-col w-1/5 float-left h-full items-center justify-center hidden md:flex">
+      <div className="fixed -mt-5 flex-col items-center justify-center hidden md:flex">
         <div
-          className={`relative bg-[#4e4c48] w-1/2 h-[12%]  lg:h-1/6 mt-10 rounded-md cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 ${
+          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
             state.home ? "linkHover" : ""
           }`}
           onMouseEnter={() => dispatch({ type: "hover", id: "home" })}
           onMouseLeave={() => dispatch({ type: "unhover", id: "home" })}
         >
-          <Link to="/" className="w-full h-full grid justify-center">
-            <p className="relative top-[15%]">Home</p>
-            <LinkBtn state={state.home}/>
+          <Link
+            to="/"
+            className="relative w-full h-full rounded-full flex flex-col items-center justify-center"
+          >
+            <p className="text-[9px] absolute -top-1 -left-2">Home</p>
+            <LinkBtn state={state.home} />
           </Link>
         </div>
         <div
-          className={`relative bg-[#4e4c48] w-1/2 h-[12%]  lg:h-1/6 mt-10 rounded-md cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 ${
+          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
             state.about ? "linkHover" : ""
           }`}
           onMouseEnter={() => dispatch({ type: "hover", id: "about" })}
           onMouseLeave={() => dispatch({ type: "unhover", id: "about" })}
         >
-          <Link to="/about" className="w-full h-full grid justify-center">
-            <p className="relative top-[15%]">About</p>
-            <LinkBtn state={state.about}/>
+          <Link to="/about" className="relative">
+            <p className="text-[9px] absolute -top-1 -left-2">About</p>
+            <LinkBtn state={state.about} />
           </Link>
         </div>
         <div
-          className={`relative bg-[#4e4c48] w-1/2 h-[12%]  lg:h-1/6 mt-10 rounded-md cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 ${
+          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
             state.work ? "linkHover" : ""
           }`}
           onMouseEnter={() => dispatch({ type: "hover", id: "work" })}
           onMouseLeave={() => dispatch({ type: "unhover", id: "work" })}
         >
-          <Link to="/work" className="w-full h-full grid justify-center">
-            <p className="relative top-[15%]">Work</p>
-            <LinkBtn state={state.work}/>
+          <Link to="/work" className="relative">
+            <p className="text-[9px] absolute -top-1 -left-1">Work</p>
+            <LinkBtn state={state.work} />
           </Link>
         </div>
         <div
-          className={`relative bg-[#4e4c48] w-1/2 h-[12%]  lg:h-1/6 mt-10 rounded-md cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 ${
+          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
             state.contact ? "linkHover" : ""
           }`}
           onMouseEnter={() => dispatch({ type: "hover", id: "contact" })}
           onMouseLeave={() => dispatch({ type: "unhover", id: "contact" })}
         >
-          <Link to="/contact" className="w-full h-full grid justify-center">
-            <p className="relative top-[10%]">Contact</p>
-            <LinkBtn state={state.contact}/>
+          <Link to="/contact" className="relative">
+            <p className="text-[9px] absolute -top-1 -left-4">Contact</p>
+            <LinkBtn state={state.contact} />
           </Link>
         </div>
       </div>
