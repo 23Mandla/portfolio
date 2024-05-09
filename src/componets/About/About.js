@@ -3,9 +3,9 @@ import bg from "../assets/images/about.png";
 
 export default function About() {
   return (
-      <div className="relative w-full md:w-full pt-24 px-20 space-y-20 md:space-y-0 h-screen  after:content-[''] after:absolute after:bg-gray-600 after:h-[1px] after:w-[80%] after:bottom-10 after:left-[10%]" style={{backgroundImage:`url(${bg})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+      <div className="relative w-full md:w-full px-20 space-y-20 md:space-y-0 h-screen" style={{backgroundImage:`url(${bg})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
      
-        <div className="bg-[#ccb28c] py-12 col-span-2 relative w-[60%] float-right">
+        <div className="bg-[#ccb28c] py-12 col-span-2 relative w-[60%] float-right translate-y-[30%]">
           <div className="absolute h-20 w-20 rounded-full -top-6 -left-4 mb:-left-8 bg-black block md:hidden">
             <img src={me} alt="me" className="w-full h-full rounded-full" />
           </div>
