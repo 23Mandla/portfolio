@@ -49,7 +49,7 @@ export default function Home() {
         backgroundSize: "cover",
       }}
     >
-      <div className="grid md:grid-cols-2 w-[94%] m-auto">
+      <div className="grid md:grid-cols-2 w-[94%] m-auto p-6">
         <div
           ref={ref}
           className="hidden md:grid text-[12px] lg:text-[14px] text-gray-600 order-last md:order-first"
