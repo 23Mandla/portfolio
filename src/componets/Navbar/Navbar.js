@@ -24,7 +24,7 @@ export default function Navbar({ isOpen }) {
 
   return (
     <>
-      <div className="fixed -mt-5 flex-col items-center justify-center hidden md:flex">
+      <div className="fixed -mt-5 flex-col items-center justify-center hidden md:flex translate-y-1/2">
         <div
           className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
             state.home ? "linkHover" : ""

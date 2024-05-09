@@ -13,7 +13,7 @@ export default function Layout() {
 
   return (
     <div className="relative grid grid-cols-7 w-full">
-      <div className="bg-[#ccb28c] flex items-center justify-center">
+      <div className="bg-[#ccb28c] flex justify-center">
         <Navbar isOpen={isOpen}/>
         <ToggleNav toggle={handleToggle} />
       </div>
