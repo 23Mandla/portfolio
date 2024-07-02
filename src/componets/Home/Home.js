@@ -69,7 +69,7 @@ export default function Home() {
                 hovered.link ? "link" : ""
               }`}
             >
-              <p className="absolute -left-16 -top-0.5 w-40 text-[12px] text-[#FFFFFF]">
+              <p className="absolute -left-16 -top-0.5 w-40 text-[12px] text-[#dab8b8]">
                 Get in touch
               </p>
               <img
