@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function MenuItem({ showMenu: isOpen}) {
+export default function MobileView({ showMenu: isOpen}) {
   return (
     isOpen && (
       <motion.div

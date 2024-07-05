@@ -11,7 +11,7 @@ import art from "../../componets/assets/images/art.png";
 import todo from "../../componets/assets/images/todo.png";
 import stokveel from "../../componets/assets/images/stokveel.png";
 import linkBtn from "../assets/images/link.png";
-import homeBg from "../assets/images/home-bg.png";
+import homeBg from "../assets/images/home_.png";
 import mandla from "../assets/images/cartoon.png";
 
 const reducer = (state, action) => {
