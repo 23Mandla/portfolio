@@ -39,6 +39,11 @@ body {
   color: #FDFEEF;
 }
 
+.active-color{
+  background-color: #0fff;
+
+}
+
 .link{
   border-color: white;
   transform: scale(1.1);

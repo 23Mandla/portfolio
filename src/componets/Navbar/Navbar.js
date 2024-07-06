@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import LinkBtn from "../LinkBtn/LinkBtn";
 
 const reducer = (state, action) => {
@@ -8,75 +8,66 @@ const reducer = (state, action) => {
       return { ...state, [action.id]: true };
     case "unhover":
       return { ...state, [action.id]: false };
+
     default:
       return state;
   }
 };
 
-export default function Navbar({ isOpen }) {
+export default function Navbar() {
   const [state, dispatch] = useReducer(reducer, {
     home: false,
     about: false,
     work: false,
     contact: false,
+    active: null,
   });
 
+  const links = [
+    { id: "home", to: "/", text: "Home" },
+    { id: "about", to: "/about", text: "About" },
+    { id: "work", to: "/work", text: "Work" },
+    { id: "contact", to: "/contact", text: "Contact" },
+  ];
+
+  //get the current path
+  const path = useLocation().pathname;
+
+  //set the active link
+  if (path === "/") {
+    state.active = "home";
+  } else if (path === "/about") {
+    state.active = "about";
+  } else if (path === "/work") {
+    state.active = "work";
+  } else if (path === "/contact") {
+    state.active = "contact";
+  }
+
   return (
-    <>
-      <div className="fixed -mt-5 flex-col items-center justify-center hidden md:flex translate-y-[35%]">
-        
-        <div
-          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
-            state.home ? "linkHover" : ""
-          }`}
-          onMouseEnter={() => dispatch({ type: "hover", id: "home" })}
-          onMouseLeave={() => dispatch({ type: "unhover", id: "home" })}
+    <div className="fixed -mt-5 flex-col items-center hidden md:flex translate-y-[35%]">
+      {links.map((link) => (
+        <Link
+          key={link.id}
+          to={link.to}
+          className={`flex relative items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
+            state[link.id] ? "linkHover" : ""
+          } ${state.active === link.id ? "bg-[#6ad389]" : ""}`}
+          onMouseEnter={() => dispatch({ type: "hover", id: link.id })}
+          onMouseLeave={() => dispatch({ type: "unhover", id: link.id })}
         >
-          <Link
-            to="/"
-            className="relative w-full h-full rounded-full flex flex-col items-center justify-center"
-          >
-            <p className="text-[9px] absolute -top-1 -left-2">Home</p>
-            <LinkBtn state={state.home} />
-          </Link>
-        </div>
-        <div
-          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
-            state.about ? "linkHover" : ""
-          }`}
-          onMouseEnter={() => dispatch({ type: "hover", id: "about" })}
-          onMouseLeave={() => dispatch({ type: "unhover", id: "about" })}
-        >
-          <Link to="/about" className="relative">
-            <p className="text-[9px] absolute -top-1 -left-2">About</p>
-            <LinkBtn state={state.about} />
-          </Link>
-        </div>
-        <div
-          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
-            state.work ? "linkHover" : ""
-          }`}
-          onMouseEnter={() => dispatch({ type: "hover", id: "work" })}
-          onMouseLeave={() => dispatch({ type: "unhover", id: "work" })}
-        >
-          <Link to="/work" className="relative">
-            <p className="text-[9px] absolute -top-1 -left-1">Work</p>
-            <LinkBtn state={state.work} />
-          </Link>
-        </div>
-        <div
-          className={`flex items-center justify-center bg-[#4e4c48] mt-10 rounded-full cursor-pointer shadow-[1px_1px_4px_1px_#101319] text-gray-400 p-5 ${
-            state.contact ? "linkHover" : ""
-          }`}
-          onMouseEnter={() => dispatch({ type: "hover", id: "contact" })}
-          onMouseLeave={() => dispatch({ type: "unhover", id: "contact" })}
-        >
-          <Link to="/contact" className="relative">
-            <p className="text-[9px] absolute -top-1 -left-4">Contact</p>
-            <LinkBtn state={state.contact} />
-          </Link>
-        </div>
-      </div>
-    </>
+          {link.text === "Contact" ? (
+            <p className="text-[9px] absolute top-4 left-1 text-white">
+              {link.text}
+            </p>
+          ) : (
+            <p className="text-[9px] absolute top-4 left-3 text-white">
+              {link.text}
+            </p>
+          )}
+          <LinkBtn state={state[link.id]} />
+        </Link>
+      ))}
+    </div>
   );
 }

@@ -1,13 +1,10 @@
-import me from "../assets/images/cartoon.png";
 import bg from "../assets/images/about.png";
 
 export default function About() {
   return (
       <div className="relative w-full md:w-full  px-20 space-y-20 md:space-y-0 h-screen" style={{backgroundImage:`url(${bg})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
         <div className="absolute bg-[#ccb28c] py-12 col-span-2 w-[60%] right-10 top-[10%]">
-          <div className="absolute h-20 w-20 rounded-full -top-6 -left-4 mb:-left-8 bg-black block md:hidden">
-            <img src={me} alt="me" className="w-full h-full rounded-full" />
-          </div>
+         
           <div className="m-auto w-[100%] mb:w-[83%] h-full p-12 space-y-8 bg-[#9e8e6f]  text-[#FFFFFFFF] text-[12px] mb:text-[14px]">
             <p>
               I'm Mandla Mbolekwa, final year student at Unisa and a software

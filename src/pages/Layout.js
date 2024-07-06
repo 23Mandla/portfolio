@@ -10,7 +10,7 @@ export default function Layout() {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 770px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 768px))" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 780px)" });
 
   const handleToggle = () => {
     setToggle(!isOpen);
@@ -18,8 +18,8 @@ export default function Layout() {
  
 
   return (
-    <div className="relative block  md:grid md:grid-cols-7 w-full">
-      <div className="bg-[#ccb28c] flex justify-center">
+    <div className="relative  md:grid md:grid-cols-7 w-full">
+      <div className="bg-[#595963] border-r border-gray-600 relative flex justify-center top-0 left-0 right-0 w-full z-50">
         {isTabletOrMobile && <ToggleNav toggle={handleToggle} />}
         {isDesktopOrLaptop && <Navbar isOpen={isOpen} />}
       </div>
@@ -28,7 +28,7 @@ export default function Layout() {
         import page transition and animate pages
        */}
 
-      <div className="col-span-6">
+      <div className="md:col-span-6">
         <Outlet />
       </div>
     </div>

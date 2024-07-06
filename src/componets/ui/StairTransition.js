@@ -16,12 +16,11 @@ const stairVariants = {
 
 //calculate the number of stairs in reverse
 const stairArr = () => Array.from({ length: 7 }, (_, i) => i);
-console.log(stairArr())
 
 export default function StairTransition() {
   
   return (
-    <div className="w-full h-full left-0 z-30 fixed flex pointer-events-none">
+    <div className="w-full h-full left-0 z-50 fixed flex pointer-events-none">
       {stairArr().map((_, i) => (
         <motion.div
           key={i}

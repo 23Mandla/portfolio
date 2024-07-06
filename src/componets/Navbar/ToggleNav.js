@@ -3,9 +3,9 @@ import { CiMenuFries } from "react-icons/ci";
 
 export default function ToggleNav({ toggle }) {
   return (
-    <div className="w-full bg-black  top-0 fixed h-1/2">
-      <h1 className="text-white text-5xl font-bold">Mobile nav</h1>
-      <CiMenuFries className="bg-teal-300 tex-2xl" />
+    <div className="w-full bg-[#6c6356] top-0 left-0 right-0 fixed flex justify-between py-2 px-5 items-center">
+      <h1 className="ml-16">Mandla<span className="text-4xl ml-1 text-[#0ff]">.</span></h1>
+      <CiMenuFries className="text-3xl text-cyan-200" />
     </div>
   );
 }
